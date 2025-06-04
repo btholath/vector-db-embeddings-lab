@@ -1,0 +1,13 @@
+
+This scatter plot, titled "Word Embeddings Visualization (Life Insurance Terms)," helps illustrate how different life insurance-related terms are semantically related in a reduced-dimensional space using PCA (Principal Component Analysis).
+- Each term is represented by a data point positioned based on its word embedding.
+- The closer two terms are, the stronger their semantic relationship.
+- Terms like "policy," "coverage," and "beneficiary" are positioned near each other, likely because they frequently co-occur and have similar meanings in insurance contexts.
+- Dimensionality reduction via PCA allows us to visualize high-dimensional embeddings in a 2D space, helping interpret semantic clusters.
+
+- This graph shows how insurance-related words are connected based on meaning and usage.
+- Words that often appear together or have similar meanings are placed closer.
+- For example, "claim" and "approval" are near each other because claims often require approval in insurance.
+- "Investment" and "returns" are related because insurance often includes financial benefits.
+- This helps computers understand words the way humans do—by relationships, rather than just dictionary definitions.
+

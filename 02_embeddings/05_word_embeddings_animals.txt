@@ -1,0 +1,14 @@
+
+This scatter diagram provides insight into word embeddings and their relationships in a reduced-dimensional space using Principal Component Analysis (PCA).
+- This visualization shows how words are clustered based on semantic similarity.
+- The words "dog" and "woof" are close together because they are semantically related—dogs make the sound "woof."
+- Similarly, "cat" and "meow" are positioned close, capturing their relationship.
+- The word "say" is somewhat in between, suggesting it has a weaker but still relevant association with the other words.
+- PCA has compressed the high-dimensional Word2Vec embeddings into two dimensions, making it easier to interpret the relationships.
+
+- This diagram helps you see how words are grouped based on meaning.
+- Words that have similar meanings or relationships are placed closer together, while unrelated words are farther apart.
+- For example, "dog" and "woof" are near each other because dogs make the "woof" sound.
+- "Cat" and "meow" are also grouped together for the same reason.
+- This type of visualization helps computers understand words the way humans do—by their relationships rather than just individual definitions.
+
