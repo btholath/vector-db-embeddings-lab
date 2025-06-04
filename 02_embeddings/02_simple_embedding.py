@@ -23,7 +23,7 @@ plt.ylabel("Dimension 2")
 plt.legend()
 plt.grid(True)
 plt.show()
-plt.savefig("embedding_plot.png")
+plt.savefig("./02_embeddings/02_simple_embedding_plot.png")
 
 # Print out the embeddings
 for word, embedding in word_embeddings.items():
