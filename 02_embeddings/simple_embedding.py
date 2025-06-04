@@ -1,5 +1,6 @@
 """
-simple 2D embeddings visualization—this time, for popular Italian (and Italy-loved) cars in 2025. We'll assign each car a “2D embedding” just for illustrative purposes (randomized but nicely spaced), and label each on the plot.
+simple 2D embeddings visualization—this time, for popular Italian (and Italy-loved) cars in 2025. 
+We'll assign each car a “2D embedding” just for illustrative purposes (randomized but nicely spaced), and label each on the plot.
 """
 
 # /02_embeddings/italian_cars_embedding.py
