@@ -1,0 +1,14 @@
+This scatter plot, "Insurance Fraud Detection Graph (PCA)," visually represents the relationships between different entities involved in insurance fraud detection using Principal Component Analysis (PCA).
+
+- The graph captures fraud risk relationships among policyholders, claims, and adjusters.
+- Clusters of nodes (e.g., Alice, Bob, and Charlie) might indicate fraudulent connections, such as shared addresses or suspicious claims.
+- Adjusters are positioned separately, which could imply their unique role in assessing claims.
+- PCA helps reduce high-dimensional embeddings for easy visualization while maintaining structural relationships.
+
+- Each dot represents a policyholder, claim, or adjuster in an insurance fraud network.
+- Points closer together may indicate connections, such as common addresses or claims linked to the same adjuster.
+- If multiple claims seem closely associated, an insurer might investigate whether they are fraudulent.
+- This type of analysis helps detect suspicious activity in real-world insurance fraud investigations.
+
+
+Now to detect potential fraudulent groups in this network, we can apply clustering techniques such as K-Means clustering.

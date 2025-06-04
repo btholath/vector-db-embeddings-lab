@@ -1,0 +1,14 @@
+This scatter plot, "Insurance Fraud Clustering (K-Means + PCA)," visually maps potential fraudulent groups in an insurance network.
+
+- The clusters highlight relationships among policyholders, claims, and adjusters based on their embeddings.
+- Suspicious clusters (like the orange and blue groups) might indicate shared addresses, previous claims history, or connections to the same adjuster.
+- The green cluster (Bob) being isolated suggests a potential anomaly, which could be investigated for fraud risk.
+- PCA reduces dimensionality, while K-Means groups similar entities, making fraudulent groups more identifiable.
+
+- This graph helps detect fraud by grouping people and claims based on how they're related.
+- If multiple claims are linked to the same adjuster, it could signal suspicious activity.
+- The isolated point (Bob) might mean Bob has no direct fraudulent connections, while clustered entities may have hidden relationships worth investigating.
+- Insurance companies can use this to spot fraud before it happens and prevent unnecessary payouts.
+
+Explore more advanced fraud detection techniques, such as Graph Neural Networks (GNNs) or anomaly scoring for high-risk cases.
+
