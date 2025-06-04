@@ -1,0 +1,43 @@
+
+This PCA scatter chart visualizes the relationships between several words—man, woman, king, queen, and is—using their word embeddings reduced to two principal components (PCA Component 1 and 2).
+
+What’s shown:
+
+Closeness = Semantic Similarity:
+Words that are close together on the chart have similar meanings or are used in similar contexts in the corpus the embeddings were trained on.
+
+"Gender" Direction:
+man and woman are closer to each other, showing their semantic similarity (both are human, gendered nouns).
+
+king and queen are paired as royal terms, also reflecting gendered distinctions.
+The queen point sits closer to woman, and king is slightly further but still in the "royalty" direction. This is typical: the vector difference between "king" and "queen" often mirrors the difference between "man" and "woman" in well-trained embeddings.
+
+"Is" as a Common Word:
+The word is is not semantically close to the others (it’s a verb, not a noun), but because it appears with all types of words, its embedding may end up somewhat central or near the rest in a simple toy model.
+
+Interpretation in Embedding Space:
+The distances between points illustrate how a model "understands" the relationships between these words.
+
+In richer, higher-dimensional embedding spaces, directions can capture relationships like:
+king − man + woman ≈ queen
+This famous example shows that you can do arithmetic on word vectors to find analogies.
+
+PCA’s Role:
+PCA reduces the high-dimensional embeddings (maybe 50, 100, or 300+ dimensions) down to just 2, preserving as much of the overall variation as possible.
+The axes ("PCA Component 1" and "PCA Component 2") don’t directly map to semantic features (like gender or royalty), but similar words and relationships should cluster or align together.
+
+Summary:
+This chart provides a 2D visual summary of how similar or different the words are in meaning, according to their learned embeddings. Words like man/woman and king/queen cluster as expected, showing that word embeddings can capture both gender and category (royalty, human, etc.) relationships, even in two dimensions.
+
+
+More on equation king − man + woman ≈ queen
+This equation represents a classic example of word vector arithmetic in word embeddings, specifically using models like Word2Vec. The idea is that words can be represented as multi-dimensional vectors where semantic relationships are preserved.
+- In models like Word2Vec, words are mapped to a vector space, where similar words have closer vector representations.
+- The equation king - man + woman ≈ queen demonstrates gender-based relationships in word embeddings.
+- Conceptually, the vector difference between "king" and "man" represents masculinity or royalty, while adding "woman" shifts the meaning toward the female equivalent, "queen".
+- This principle is used in NLP tasks like analogy solving, where embeddings capture semantic relationships without explicit rules.
+
+- Think of it like a word puzzle: if "king" is to "man" as "queen" is to "woman", then removing "man" from "king" and adding "woman" should give "queen".
+- AI learns relationships between words based on how they are used in sentences.
+- These relationships allow AI to understand and generate human-like responses, such as suggesting synonyms or filling in missing words in a sentence.
+
