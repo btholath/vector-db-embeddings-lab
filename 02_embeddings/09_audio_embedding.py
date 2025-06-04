@@ -2,6 +2,7 @@ import librosa
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.manifold import TSNE
+import os
 
 def audio_embeddings(audio_files):
     """
@@ -12,7 +13,15 @@ def audio_embeddings(audio_files):
 
     for audio_path in audio_files:
         # Load the audio file
-        y, sr = librosa.load(audio_path)
+        full_path = "./audio_data/" + audio_path
+        
+        # Check if file exists
+        if not os.path.exists(full_path):
+            print(f"Warning: File {audio_path} not found. Skipping...")
+            continue
+
+        # Load the audio file
+        y, sr = librosa.load(full_path)
 
         # Compute MFCCs
         mfccs = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=13)
@@ -43,5 +52,5 @@ def audio_embeddings(audio_files):
     print("Audio embeddings plot saved as 'audio_embeddings_tsne.png'.")
 
 # Example usage with multiple audio files
-audio_files = ["1.mp3", "1.wav"]  # Add more audio files as needed
+audio_files = ["Ring01.wav", "Ring02.wav", "Ring03.wav", "Ring04.wav", "Ring05.wav", "Ring06.wav", "Ring07.wav", "Ring08.wav", "Ring09.wav", "Ring10.wav","1.wav","BasicCancelledEarcon.wav","BasicDoneListeningEarcon.wav","BasicListeningEarcon.wav"]  # Add more audio files as needed
 audio_embeddings(audio_files)
