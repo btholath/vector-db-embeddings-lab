@@ -11,3 +11,5 @@ This scatter plot, titled "Word Embeddings Visualization (Life Insurance Terms),
 - "Investment" and "returns" are related because insurance often includes financial benefits.
 - This helps computers understand words the way humans do—by relationships, rather than just dictionary definitions.
 
+Closeness = Semantic Similarity
+Words that are close together on the chart.

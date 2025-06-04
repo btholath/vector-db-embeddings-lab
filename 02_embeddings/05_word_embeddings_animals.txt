@@ -12,3 +12,5 @@ This scatter diagram provides insight into word embeddings and their relationshi
 - "Cat" and "meow" are also grouped together for the same reason.
 - This type of visualization helps computers understand words the way humans do—by their relationships rather than just individual definitions.
 
+Closeness = Semantic Similarity
+Words that are close together on the chart.

@@ -1,0 +1,20 @@
+What This Script Does
+Computes sentence embeddings using SentenceTransformer (MiniLM-L6-v2)
+Uses PCA to reduce high-dimensional embeddings to 2D
+Visualizes embeddings in a scatter plot with sentence labels
+Saves the visualization as a PNG file (sentence_embeddings.png)
+Run this script, and you'll get a scatter plot representation of life insurance-related sentences. 
+
+
+
+This scatter plot, "Sentence Embeddings Visualization (Life Insurance)," maps different insurance-related sentences in a two-dimensional PCA space based on their embeddings.
+
+- Each point represents a sentence, where closer sentences are semantically related based on their embeddings.
+- Clustering patterns can reveal topic similarities, such as "Investment-linked policies offer financial growth" being distinct from "Risk assessment affects insurance pricing."
+- The spread suggests variation in contextual meaning—some sentences are clustered, while others are far apart.
+- These embeddings could be used for similarity searches or semantic document retrieval.
+
+- This visualization shows how AI understands and categorizes insurance-related sentences.
+- Sentences positioned closer together likely have similar meanings.
+- "Premium payment" appears separate, which might suggest it has a different financial context than the other sentences.
+- Computers use these relationships to group similar topics in automated systems—such as insurance claims processing or policy recommendations.
